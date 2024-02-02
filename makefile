@@ -9,7 +9,7 @@ format:
 		black *.py
 
 lint:
-		pylint --disable=R,C bikeshare_model/*.py  || True
+		pylint --disable=R,C bikeshare_model/*.py  || true
 
 test:
 		python3 -m pytest tests/test_*.py
