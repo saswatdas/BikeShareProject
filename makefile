@@ -10,7 +10,8 @@ format:
 		black *.py
 
 lint:
-		pylint --disable=R,C bikeshare_model/*.py  || true
+		pylint --disable=R,C bikeshare_model/*.py  &&\
+		pylint --disable=R,C bikeshare_model_model/*.py || true
 
 build:
       
