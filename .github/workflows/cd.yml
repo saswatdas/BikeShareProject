@@ -12,6 +12,7 @@ steps:
 - name: Pull Docker Image
 env:
 DOCKER_USER: ${{ secrets.DOCKER_USER_NAME }}
+echo $DOCKER_USER
 run: sudo docker pull $DOCKER_USER/bikeshare_model_api:1.0.2
 - name: Delete Old Docker Container
 run: sudo docker rm -f titanic-fastapi-container || true
