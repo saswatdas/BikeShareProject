@@ -10,11 +10,8 @@ deploy:
 runs-on: self-hosted
 steps:
 - name: Pull Docker Image
-env:
-run: sudo docker pull saswatdas123/bikeshare_model_api:1.0.2
+  run: sudo docker pull saswatdas123/bikeshare_model_api:1.0.2
 - name: Delete Old Docker Container
-run: sudo docker rm -f bikeshare-fastapi-container || true
+  run: sudo docker rm -f bikeshare-fastapi-container || true
 - name: Run Docker Container
-env:
-run: sudo docker run -it -d -p 8001:8001 --name
-bikeshare-fastapi-container saswatdas123/bikeshare_model_api:1.0.2
+   run: sudo docker run -it -d -p 8001:8001 --name bikeshare-fastapi-container saswatdas123/bikeshare_model_api:1.0.2
