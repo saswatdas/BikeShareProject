@@ -24,11 +24,11 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies, format, lint and test
+    - name: Install dependencies build, format, lint and test
       run: |
         make all
     - name: Build the Docker image
-      run: docker build . -t saswatdas123/bikeshare_model_api:1.0.2
+      run: docker build . -t saswatdas123/bikeshare_model_api
     - name: Login to Docker Hub
       uses: docker/login-action@v3
       with:
