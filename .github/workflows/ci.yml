@@ -35,6 +35,6 @@ jobs:
           username: "saswatdas123"
           password: "dckr_pat_ysUAOewyvfW1ZsIeF9Yl0CLeG4c"
     - name: Deploy Docker images to Docker Hub
-      run: docker push saswatdas123/bikeshare_model_api:1.0.2
+      run: docker push saswatdas123/bikeshare_model_api
   
    
