@@ -1,6 +1,5 @@
 # pull python base image
 FROM python:3.11
-
 # copy application files
 ADD . .
 
