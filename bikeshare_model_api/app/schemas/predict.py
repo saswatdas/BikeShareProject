@@ -23,7 +23,7 @@ class MultipleDataInputs(BaseModel):
                 "dteday": "2012-11-05", # datetime.datetime.strptime("2012-11-05", "%Y-%m-%d"),  
                 "season": "winter", 
                 "hr": "6am",
-                "holiday": "No", 
+                "holiday": "Yes", 
                 "weekday": "Mon",
                 "workingday": "Yes",
                 "weathersit": "Mist",
