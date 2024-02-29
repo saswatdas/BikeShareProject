@@ -1,4 +1,4 @@
-# pull python base image
+# pull python base image - Feb 29 2024
 FROM python:3.11
 # copy application files
 ADD . .
