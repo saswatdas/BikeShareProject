@@ -3,7 +3,7 @@ fastapi>=0.64.0,<1.0.0
 pydantic #>=1.8.1,<2.0.0
 requests>=2.23.0,<2.24.0
 
-# testing requirements
+# testing requirements#
 pytest>=6.2.3,<6.3.0
 
 # repo maintenance tooling 
